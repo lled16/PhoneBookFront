@@ -1,10 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
+import EditModal from '../modalEdit/modalEdit';
 import '../table/table.css';
 
 const URL = 'http://localhost:5033/api/PhoneBook';
 
 export default function Table({ listaItens }) {
+    const [showEditModal, setShowEditModal] = useState(false);
+    const [editContact, setEditContact] = useState(null);
+
     const handleDelete = (id) => {
         axios.delete(`${URL}?idContact=${id}`)
             .then(() => {
@@ -15,6 +19,20 @@ export default function Table({ listaItens }) {
                 console.log('Erro ao deletar o item');
                 window.location.reload();
             });
+    };
+
+    const handleEdit = (contact) => {
+        setEditContact(contact);
+        setShowEditModal(true);
+    };
+
+    const handleCloseEditModal = () => {
+        setShowEditModal(false);
+        setEditContact(null); 
+    };
+
+    const handleSaveEditModal = () => {
+        window.location.reload(); 
     };
 
     return (
@@ -36,7 +54,7 @@ export default function Table({ listaItens }) {
                             <td>{item.age}</td>
                             <td>{item.phones ? item.phones.map(phone => phone.phoneNumber).join(' | ') : ''}</td>
                             <td>
-                                <button className="buttonEdit">
+                                <button className="buttonEdit" onClick={() => handleEdit(item)}>
                                     Edit
                                 </button>
                             </td>
@@ -49,6 +67,14 @@ export default function Table({ listaItens }) {
                     ))}
                 </tbody>
             </table>
+            {editContact && (
+                <EditModal
+                    show={showEditModal}
+                    handleClose={handleCloseEditModal}
+                    contact={editContact}
+                    onSave={handleSaveEditModal}
+                />
+            )}
         </div>
     );
 }

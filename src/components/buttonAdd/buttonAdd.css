@@ -1,6 +1,6 @@
 .buttonAdd {
-    height: 35px !important;
-    border-radius: 50px;
+    height: 3em !important;
+    border-radius: 2px;
     border: none;
     width: 15em;
     background-color: #255C20;
@@ -8,9 +8,11 @@
     font-weight: bold;
     cursor: pointer;
 }
-.buttonAdd:hover{
+
+.buttonAdd:hover {
     opacity: 0.8;
 }
+
 .modal {
     display: flex;
     position: fixed;
@@ -19,39 +21,57 @@
     justify-content: center;
     left: 30%;
     background-color: white;
-    height: 40%;
+    height: 50%;
     padding-top: 50px;
     border-radius: 15px;
 }
 
-.input{
+.input {
     padding-top: 5px;
 }
 
-.nameFormInput{
+.nameFormInput {
     padding-right: 100px;
 }
 
-.formNameInputs, .formNameInputsAge{
+.formNameInputs,
+.formNameInputsAge {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.formNameInputsAge{
+.formNameInputsAge {
     padding-bottom: 10%;
 }
-.buttonIpunt{
+
+.buttonIpunt {
     background-color: #255C20;
     border: none;
     height: 30px;
     border-radius: 5px;
     color: white;
     width: 100%;
-    
+
+}
+.buttonEdit{
+    background-color: darkorange;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
 }
 
-.formNameButton{
+.formNameButton {
+    display: flex;
+    justify-content: center;
+}
+
+.formTotalEdit {
+    width: 80%;
+}
+.titleModal{
     display: flex;
     justify-content: center;
 }

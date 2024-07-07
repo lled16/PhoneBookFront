@@ -57,10 +57,14 @@ export default function ButtonAdd({ onAddContact }) {
 
             <Modal show={showModal} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Add New Contact</Modal.Title>
                 </Modal.Header>
+
                 <Modal.Body className="modal">
                     <Form onSubmit={handleSubmit} className="formTotal">
+
+                        <div className="titleModal">
+                            <h2>Create Contact</h2>
+                        </div>
                         <Form.Group controlId="formNome" className="formNameInputs">
                             <Form.Label className="nameFormInput">Name</Form.Label>
                             <Input className="input"
@@ -78,6 +82,7 @@ export default function ButtonAdd({ onAddContact }) {
                                 type="text"
                                 placeholder="Enter phone number"
                                 value={telefone1}
+                                required
                                 onChange={(e) => setTelefone1(e.target.value)}
                             />
                         </Form.Group>
@@ -112,7 +117,7 @@ export default function ButtonAdd({ onAddContact }) {
                                 required
                             />
                         </Form.Group>
-                        <Form.Group  className="formNameButton">
+                        <Form.Group className="formNameButton">
                             <Button variant="primary" type="submit" className="buttonIpunt">
                                 Add Contact
                             </Button>

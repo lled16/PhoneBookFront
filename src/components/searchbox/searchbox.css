@@ -1,7 +1,12 @@
 .searchInput{
-    width: 600px;
-    height: 25px;
-    border-radius: 50px;
+    width:40vw;
+    height: 5vh;
+    border-radius: 1px;
     border: none;
-    padding: 5px;
+    padding-left: 30px;
+    color: rgb(0, 0, 0) !important;
+    border: solid white;
+    background-color: white;
+    text-decoration: none;
 }
+

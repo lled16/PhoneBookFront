@@ -15,9 +15,9 @@ th {
 .buttonDelete, .buttonEdit {
     border: none;
     color: white;
-    width: 80%;
+    width: 10vw;
     border-radius: 2px;
-    height: 2em !important;
+    height: 4vh !important;
     cursor: pointer;
     font-weight: bold;
 }
