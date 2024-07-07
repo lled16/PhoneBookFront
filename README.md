@@ -19,14 +19,32 @@ Entity Framework
 * Database 
 SQL Server
 
-## Sobre
-
-Saliento que neste projeto, por ser simples, não seria necessário a utilização da arquitetura limpa, mas introduzi para fixar aluguns fundamentos, o mesmo poderia ser feito contendo apenas a camada de API.
-
-Camadade de IOC não implementada pela simplicidade do projeto, mas as dependências também poderiam ser registradas nesta. 
-
 ## Como executar 
 
 * Clone este repositório
 
 * Abra o projeto clonado através do VSCODE, e pelo terminal, execute : npm start.
+
+## Imagens 
+
+### Home
+
+![homePhoneBook](https://github.com/lled16/PhoneBookFront/assets/32556098/0e46b235-4048-4485-b126-63ae76173602)
+
+
+### Cadastro
+
+![createphonebook](https://github.com/lled16/PhoneBookFront/assets/32556098/126fd147-7f7d-41f8-bef6-e6c790c9a013)
+
+### Listagem
+
+![listphonebook](https://github.com/lled16/PhoneBookFront/assets/32556098/b3b8d2ba-2b2d-4786-a6eb-9a195ab8971f)
+
+
+### Edição
+
+![edit](https://github.com/lled16/PhoneBookFront/assets/32556098/dc6ce62f-a41a-449f-a3e7-ff28484b0dc4)
+
+
+
+
