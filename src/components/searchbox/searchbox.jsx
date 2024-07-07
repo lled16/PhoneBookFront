@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Col } from "react-bootstrap";
 import axios from "axios";
 import '../searchbox/searchbox.css';
+import { Input } from "@mui/material";
 
 const URL = 'http://localhost:5033/api/PhoneBook'; 
 
@@ -21,7 +22,8 @@ export default function SearchBox({ onSearch }) {
     return (
         <Col className="search">
             <form onSubmit={handleFormSubmit}>
-                <input
+                <Input
+             
                     type="text"
                     name="name"
                     className="searchInput"
