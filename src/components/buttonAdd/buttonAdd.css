@@ -1,0 +1,57 @@
+.buttonAdd {
+    height: 35px !important;
+    border-radius: 50px;
+    border: none;
+    width: 15em;
+    background-color: #255C20;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.buttonAdd:hover{
+    opacity: 0.8;
+}
+.modal {
+    display: flex;
+    position: fixed;
+    top: 20%;
+    width: 40%;
+    justify-content: center;
+    left: 30%;
+    background-color: white;
+    height: 40%;
+    padding-top: 50px;
+    border-radius: 15px;
+}
+
+.input{
+    padding-top: 5px;
+}
+
+.nameFormInput{
+    padding-right: 100px;
+}
+
+.formNameInputs, .formNameInputsAge{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.formNameInputsAge{
+    padding-bottom: 10%;
+}
+.buttonIpunt{
+    background-color: #255C20;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    
+}
+
+.formNameButton{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,15 @@
+
+.searchAddButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15vw;
+    padding-right: 15vw;
+}
+.table{
+    padding-top: 50px;
+}
+.rowTable{
+    display: flex;
+    justify-content: center;
+}

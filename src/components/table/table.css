@@ -1,0 +1,34 @@
+.table {
+    width: 80vw;
+}
+
+th,
+td {
+    color: white;
+}
+
+th {
+    height: 50px;
+    padding-bottom: 25px;
+}
+
+.buttonDelete, .buttonEdit {
+    border: none;
+    color: white;
+    width: 80%;
+    border-radius: 2px;
+    height: 2em !important;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.buttonDelete:hover, .buttonEdit:hover{
+    opacity: 0.8;
+}
+.buttonDelete {
+    background-color: darkred;
+}
+
+.buttonEdit {
+    background-color: darkorange;
+}
