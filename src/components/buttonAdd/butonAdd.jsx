@@ -16,6 +16,7 @@ export default function ButtonAdd({ onAddContact }) {
 
     const handleClose = () => setShowModal(false);
     const handleShow = () => setShowModal(true);
+    const handleHide = () => setShowModal(false);
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -63,6 +64,9 @@ export default function ButtonAdd({ onAddContact }) {
 
                         <div className="titleModal">
                             <h2>Create Contact</h2>
+                            <Button className="buttonHide" onClick={handleHide}>
+                                X
+                            </Button>
                         </div>
                         <Form.Group controlId="formNome" className="formNameInputs">
                             <Form.Label className="nameFormInput">Name</Form.Label>
