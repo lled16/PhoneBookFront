@@ -20,7 +20,6 @@ export default function PhoneList() {
         const searchParams = searchTerm ? `/${searchTerm}` : '';
         axios.get(`${URL}${searchParams}`)
             .then(response => {
-                console.log('Resultado da busca:', response.data);
                 setListaItens(response.data);
             })
             .catch(error => {
