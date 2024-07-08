@@ -30,7 +30,6 @@ export default function ButtonAdd({ onAddContact }) {
 
         axios.post(`${URL}`, novoContato)
             .then(() => {
-                console.log('Novo contato adicionado com sucesso');
                 onAddContact();
                 handleClose();
                 setNome("");

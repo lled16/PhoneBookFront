@@ -12,11 +12,9 @@ export default function Table({ listaItens }) {
     const handleDelete = (id) => {
         axios.delete(`${URL}?idContact=${id}`)
             .then(() => {
-                console.log('Item deletado com sucesso');
                 window.location.reload();
             })
             .catch(() => {
-                console.log('Erro ao deletar o item');
                 window.location.reload();
             });
     };

@@ -11,7 +11,6 @@ export default function SearchBox({ onSearch }) {
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-        console.log('Pesquisar:', searchTerm); // Verificar se searchTerm está correto
         onSearch(searchTerm); 
     };
 

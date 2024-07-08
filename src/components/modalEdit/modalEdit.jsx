@@ -21,13 +21,12 @@ const EditModal = ({ show, handleClose, contact, onSave }) => {
     
         const contatoAtualizado = {
             name: nome,
-            phone: telefones, // Aqui você passa diretamente o array de números de telefone
+            phone: telefones, 
             age: idade,
         };
     
         axios.put(`${URL}/${contact.contactId}`, contatoAtualizado)
             .then(() => {
-                console.log('Contato atualizado com sucesso');
                 onSave();
                 handleClose();
                 window.location.reload();
